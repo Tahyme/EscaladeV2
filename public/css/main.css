@@ -1,3 +1,49 @@
+body { 
+    background: url(escaladebg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #cccccc;
+
+    text-align: center;
+  }
+
+
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #8064A2 !important;
+    background-color: #4b9a72 !important;
+}
+
+.loginbg
+{
+    background-color: rgba(23, 23, 23, 0.751);
+    border-radius: 25px;
+    
+} 
+
+html,body {
+    height:75%;
+    width:100%;
+    margin:0;
+  }
+  body {
+    display:flex;
+  }
+  form {
+    margin:auto;/* nice thing of auto margin if display:flex; it center both horizontal and vertical :) */
+  }
+
+.centerdiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.registerform
+{
+    text-align: end;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
