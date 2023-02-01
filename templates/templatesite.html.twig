@@ -36,7 +36,7 @@
                     <a href="#" class="nav-link">À PROPOS</a>
                 </li>
                 <li class="nav-item">
-                    <a type="button" class="btn btn-dark" href="{{ path('app_login') }}"><i class="fa-solid fa-user"> </i> Connexion</a>
+                    <a type="button" class="btn btn-dark" href="{% if not app.user %}{{ path('app_login') }}{% else %}{{ path('dashboard') }}{% endif %}"><i class="fa-solid fa-user"> </i> Connexion</a>
                 </li>
 
             </ul>
