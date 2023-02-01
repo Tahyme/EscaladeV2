@@ -12,6 +12,8 @@
     <h1>Hello {{ controller_name }}! ✅</h1>
 
     This friendly message is coming from:
+    {{ app.user.userIdentifier }}
+    {{ app.user.roles | join(' ')  }}
     <ul>
         <li>Your controller at <code><a href="{{ 'C:/Users/Time4/OneDrive/Bureau/Dossier de type dossier/DEV PORJETS/EscaladeV2/src/Controller/DashboardController.php'|file_link(0) }}">src/Controller/DashboardController.php</a></code></li>
         <li>Your template at <code><a href="{{ 'C:/Users/Time4/OneDrive/Bureau/Dossier de type dossier/DEV PORJETS/EscaladeV2/templates/dashboard/index.html.twig'|file_link(0) }}">templates/dashboard/index.html.twig</a></code></li>
