@@ -9,15 +9,16 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
+        <script src="https://kit.fontawesome.com/088b93f8da.js" crossorigin="anonymous"></script>
     </head>
     <body>
         {% block navbar %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block">
                 <!-- hidden spacer to center brand on mobile --></span>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ path('homepage') }}">
                 <img src="\images\Projet escalade.png" width="200" height="auto" alt="">
             </a>
             <div class="w-100 text-right">
@@ -26,16 +27,16 @@
                 </button>
             </div>
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <div class="collapse navbar-collapse flex-grow-1 text-right textblc" id="myNavbar7">
             <ul class="navbar-nav ms-auto flex-nowrap">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Visiter</a>
+                    <a href="#" class="nav-link">VISITER</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">A propos</a>
+                    <a href="#" class="nav-link">À PROPOS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Connexion</a>
+                    <a type="button" class="btn btn-dark" href="{{ path('app_login') }}"><i class="fa-solid fa-user"> </i> Connexion</a>
                 </li>
 
             </ul>
