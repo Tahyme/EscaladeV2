@@ -10,6 +10,17 @@
 
 <div class="registerform">
     {{ form_start(registrationForm) }}
+
+        {{ form_row(registrationForm.nom, {
+            label: 'Nom'
+        }) }}
+
+            {{ form_row(registrationForm.prenom, {
+            label: 'Prenom '
+        }) }}
+
+
+
         {{ form_row(registrationForm.email, {
             label: 'E-mail '
         }) }}
