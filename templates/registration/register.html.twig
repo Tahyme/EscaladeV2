@@ -19,8 +19,15 @@
 </div>
         {{ form_row(registrationForm.agreeTerms) }}
 
+        <div class="mb-3">
+            Déjà un compte ? <a href="{{ path('app_login') }}">Se connecter</a>
+        </div>
+
         <button type="submit" class="btn text-white btn-primary"> S'inscrire</button>
     {{ form_end(registrationForm) }}
+        <div class="mb-3">
+            <a href="{{ path('homepage') }}"><i class="fa-solid fa-house fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;" ></i></a>
+        </div>
 </div>
 </div>
 {% endblock %}
