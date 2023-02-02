@@ -1,0 +1,26 @@
+body { 
+    background: url(fonddash.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #cccccc;
+
+    color: #cccccc;
+    
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.blanctexte
+{
+    color: #cccccc;
+}
+
+.dashbg
+{
+    background-color: rgba(23, 23, 23, 0.751);
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
