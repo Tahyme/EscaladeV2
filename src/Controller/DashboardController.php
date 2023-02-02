@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\User\UserInterface;
  
 class DashboardController extends AbstractController
 {
@@ -38,4 +39,5 @@ class DashboardController extends AbstractController
 
         return new Response('Saved new product with id '.$User->getId());
     }*/
+
 }
