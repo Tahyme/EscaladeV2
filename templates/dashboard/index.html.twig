@@ -17,15 +17,15 @@
 <div class="dashbg">
     Rang {{ app.user.rang}}
     <ul>
-    <li>Points : {{ app.user.Points }}</li>
+    <li>Points : {{ app.user.Points }} <i class="fa-solid fa-diamond"></i></li>
 
     {% if app.user.Points < 10 %}
         <li>
-            Il vous reste {{ 10 - app.user.Points }} points pour passer au rang suivant.
+            Il vous reste {{ 10 - app.user.Points }} <i class="fa-solid fa-diamond"></i> points pour passer au rang suivant.
         </li>
     {% elseif app.user.Points >= 10 and app.user.Points < 30 %}
         <li>
-            Il vous reste {{ 30 - app.user.Points }} points pour passer au rang suivant.
+            Il vous reste {{ 30 - app.user.Points }} <i class="fa-solid fa-diamond"></i> points pour passer au rang suivant.
         </li>
     {% endif %}
     </ul>
